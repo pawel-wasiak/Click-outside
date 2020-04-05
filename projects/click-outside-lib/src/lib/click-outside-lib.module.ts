@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
-import { ClickOutsideLibComponent } from './click-outside-lib.component';
 
+import { ClickOutsideDirective } from './click-outside-directive';
 
+const declarations = [
+    ClickOutsideDirective
+];
 
 @NgModule({
-  declarations: [ClickOutsideLibComponent],
+  declarations,
   imports: [
   ],
-  exports: [ClickOutsideLibComponent]
+  exports: declarations
 })
 export class ClickOutsideLibModule { }
